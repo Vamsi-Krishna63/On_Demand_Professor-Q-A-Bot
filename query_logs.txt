@@ -1,0 +1,49 @@
+2024-11-21 01:36:43,602 - Use pytorch device_name: cpu
+2024-11-21 01:36:43,602 - Load pretrained SentenceTransformer: multi-qa-MiniLM-L6-cos-v1
+2024-11-21 01:36:46,549 - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2024-11-21 01:36:46,575 - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2024-11-21 01:36:46,777 - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2024-11-21 01:37:25,003 - Use pytorch device_name: cpu
+2024-11-21 01:37:25,003 - Load pretrained SentenceTransformer: multi-qa-MiniLM-L6-cos-v1
+2024-11-21 01:37:28,325 - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2024-11-21 01:37:28,335 - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2024-11-21 01:37:28,447 - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2024-11-21 01:38:26,969 - HTTP Request: POST http://localhost:6333/collections/network_security_knowledge/points/search "HTTP/1.1 200 OK"
+2024-11-21 01:38:51,530 - HTTP Request: POST http://localhost:6333/collections/network_security_knowledge/points/search "HTTP/1.1 200 OK"
+2024-11-21 01:40:31,204 - HTTP Request: POST http://localhost:6333/collections/network_security_knowledge/points/search "HTTP/1.1 200 OK"
+2024-11-21 01:41:49,856 - HTTP Request: POST http://localhost:6333/collections/network_security_knowledge/points/search "HTTP/1.1 200 OK"
+2024-11-21 01:59:11,503 - Use pytorch device_name: cpu
+2024-11-21 01:59:11,503 - Load pretrained SentenceTransformer: all-MiniLM-L12-v2
+2024-11-21 01:59:14,521 - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2024-11-21 01:59:14,536 - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2024-11-21 01:59:14,725 - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2024-11-21 01:59:47,941 - HTTP Request: POST http://localhost:6333/collections/network_security_knowledge/points/search "HTTP/1.1 200 OK"
+2024-11-21 02:03:30,162 - HTTP Request: POST http://localhost:6333/collections/network_security_knowledge/points/search "HTTP/1.1 200 OK"
+2024-11-21 02:12:56,587 - Use pytorch device_name: cpu
+2024-11-21 02:12:56,587 - Load pretrained SentenceTransformer: all-MiniLM-L12-v2
+2024-11-21 02:13:00,032 - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2024-11-21 02:13:00,056 - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2024-11-21 02:13:00,080 - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2024-11-21 02:13:14,090 - HTTP Request: POST http://localhost:6333/collections/network_security_knowledge/points/search "HTTP/1.1 200 OK"
+2024-11-21 02:23:50,945 - Use pytorch device_name: cpu
+2024-11-21 02:23:50,945 - Load pretrained SentenceTransformer: all-MiniLM-L12-v2
+2024-11-21 02:23:54,300 - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2024-11-21 02:23:54,335 - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2024-11-21 02:23:54,335 - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2024-11-21 02:25:35,068 - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2024-11-21 02:25:35,083 - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2024-11-21 02:25:35,258 - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2024-11-21 02:26:02,068 - Use pytorch device_name: cpu
+2024-11-21 02:26:02,068 - Load pretrained SentenceTransformer: all-MiniLM-L12-v2
+2024-11-21 02:26:08,203 - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2024-11-21 02:26:08,408 - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2024-11-21 02:26:08,434 - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2024-11-21 02:26:35,417 - HTTP Request: POST http://localhost:6333/collections/network_security_knowledge/points/search "HTTP/1.1 200 OK"
+2024-11-21 02:29:53,742 - Use pytorch device_name: cpu
+2024-11-21 02:29:53,742 - Load pretrained SentenceTransformer: all-MiniLM-L12-v2
+2024-11-21 02:29:57,004 - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2024-11-21 02:29:57,020 - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2024-11-21 02:29:57,136 - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2024-11-21 02:30:12,520 - HTTP Request: POST http://localhost:6333/collections/network_security_knowledge/points/search "HTTP/1.1 200 OK"
+2024-11-21 02:31:24,707 - HTTP Request: POST http://localhost:6333/collections/network_security_knowledge/points/search "HTTP/1.1 200 OK"
+2024-11-21 02:31:42,417 - HTTP Request: POST http://localhost:6333/collections/network_security_knowledge/points/search "HTTP/1.1 200 OK"
