@@ -27,7 +27,7 @@ gpt4all_model = GPT4All(model_path)
 
 collection_name = "network_security_knowledge"
 
-SERPAPI_API_KEY = "7fa7214ef761e09c624ba83150a6881f0238327672d3fe4023bc65610c566cc8"
+SERPAPI_API_KEY = " "
 
 relevance_threshold = 0.6 #choose relevance threshold to improve the output
 
