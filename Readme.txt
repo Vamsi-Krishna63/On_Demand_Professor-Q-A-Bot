@@ -1,24 +1,139 @@
-Docker Setup - qdrant Vector Database Setup
+# On_Demand_Professor-Q-A-Bot
 
--> Install Docker and enable terminal
--> Run Below commands to start the qdrant Vector Database
-	1. docker pull qdrant/qdrant # download qdrant into docker
-	2. docker run -p 6333:6333 qdrant/qdrant # qdrant instance will be started on port 6333
+A context-aware, AI-powered chatbot designed to provide accurate answers to academic queries by leveraging local LLMs, vector search, and document embeddings. This bot integrates lecture notes, PDFs, and course materials to deliver precise and private, on-demand answers.
 
+---
 
-Install packages:
+## 📚 Project Overview
 
-a. sentencetransformers : Embedding model of the project
-b. qdrant_client : Connections to the qdrant database
-c. gradio : Front-end web page
-d. gpt4all : LLM model of the project 
-e. fitz : conversion of pdf files to text files to support use in sentence transformers
+This project enables:
 
+- Uploading and organizing lecture notes or knowledge documents  
+- Converting documents into embeddings using SentenceTransformers  
+- Storing embeddings in Qdrant Vector Database  
+- Using GPT4All (local LLM) to generate accurate answers  
+- Querying through an interactive Gradio-based web interface  
 
-Operation:
+Built for academic use-cases such as professor Q&A bots, teaching assistants, course support systems, and private document-based question answering.
 
-1. Run initialise_qdrant.py to create a new collection in the qdrant DB
-2. Place all the knowledge documents in one path and modify the pdf_path in the Data_insertion_qdrant.py
-3. Run Data_insertion_qdrant.py which will load each page into the qdrant DB which will help in actively pointing referencing the document and page number.
-4. Run Chatbot_application.py to start the local host and connection to qdrant DB, the local host is used to input query and receive the response from the vector DB if present or else connect to internet via a API to collect the data required.
+---
 
+## 🐳 Qdrant Setup Using Docker
+
+### 1. Install Docker Desktop  
+Ensure Docker is installed and running.
+
+### 2. Start Qdrant Vector Database  
+Run the following commands:
+
+```bash
+docker pull qdrant/qdrant
+docker run -p 6333:6333 qdrant/qdrant
+```
+
+Qdrant UI/API will be available at:
+```
+http://localhost:6333
+```
+
+---
+
+## 📦 Required Python Packages
+
+Install these libraries:
+
+- **sentence-transformers** → Convert text to embeddings  
+- **qdrant-client** → Connect to Qdrant DB  
+- **gradio** → Chatbot UI  
+- **gpt4all** → Local LLM for answering questions  
+- **pymupdf (fitz)** → PDF → text conversion  
+
+### Install all dependencies:
+```bash
+pip install sentence-transformers qdrant-client gradio gpt4all pymupdf
+```
+
+---
+
+## 📂 Repository Structure
+
+```
+On_Demand_Professor-Q-A-Bot/
+│
+├── knowledge_base/              # All documents (PDFs, notes) to index
+├── Scripts/
+│   ├── initialise_qdrant.py     # Creates Qdrant collection
+│   ├── Data_insertion_qdrant.py # Loads+indexes documents
+│   └── Chatbot_application.py   # Runs chatbot UI + retrieval
+├── query_logs.txt
+└── README.md
+```
+
+---
+
+## ⚙️ How to Run the System
+
+### ▶️ Step 1 — Initialize Qdrant Collection
+```bash
+python Scripts/initialise_qdrant.py
+```
+
+### ▶️ Step 2 — Add Your Documents
+Place PDFs inside:
+```
+knowledge_base/
+```
+
+Edit `pdf_path` in `Data_insertion_qdrant.py` if needed.
+
+### ▶️ Step 3 — Index Documents into Qdrant
+```bash
+python Scripts/Data_insertion_qdrant.py
+```
+
+This will:
+- Extract text from PDFs
+- Generate embeddings (SentenceTransformers)
+- Insert each page into Qdrant with metadata
+
+### ▶️ Step 4 — Launch Chatbot Web App
+```bash
+python Scripts/Chatbot_application.py
+```
+
+Visit:
+```
+http://localhost:7860
+```
+
+---
+
+## 🎯 Features
+
+- Fully local pipeline (no cloud dependency)
+- Vector-based similarity search for accurate retrieval
+- Privacy-preserving document handling
+- Modular & extendable
+- User-friendly Gradio UI
+- Supports PDF materials used in university courses
+
+---
+
+## 🚀 Future Enhancements
+
+- Real-time PDF upload from UI  
+- Support for DOCX, PPT, and textbook formats  
+- Integration with more LLMs (LLaMA, Mistral, Gemma, etc.)  
+- Chat memory & multi-turn context  
+- Authentication for multi-user access  
+
+---
+
+## 👨‍💻 Author
+**Vamsi Krishna**
+
+GitHub: https://github.com/Vamsi-Krishna63
+
+---
+
+Feel free to contribute or suggest improvements!
